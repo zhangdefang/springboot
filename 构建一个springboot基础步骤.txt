@@ -1,0 +1,8 @@
+初始化搭建springboot本地服务（使用开发工具idea）
+ 1、使用idea编辑器，新建一个服务项目，在File->New->Project->选择Empty Project点击确定开始新建，然后命名你的项目名称以及存储的位置
+ 2、在右侧的文件夹中点击->Modules->点击+号新增->选择spring Initializr(SDK中选择版本靠后的，注意default)，点击next按钮。
+ 3、group里面编辑自己的包名，artifact里面是包名后面的文件名，Type选择Maven（maven会自己构建依赖，在新建项目的时候可以设置maven，
+ 这样在下载的时候速度会加快，具体设置如下
+ 选择File文件下拉以后选择New Projects Settings ->Settings for New Projects->Build->Build Tools里面选择Maven配置的home path（本地的maven地址），
+ 配置User Setting File勾选Override然后去配置到settings.xml路径。），点击next按钮。
+ 4、弹窗中选择web选项（这样会自动形成Tomcat的服务），选择spring Web，点击next按钮。生成一个spring项目。
